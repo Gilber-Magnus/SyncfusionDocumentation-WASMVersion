@@ -7,9 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.13" PrivateAssets="all" />
+    <PackageReference Include="Syncfusion.Blazor.buttons" Version="23.1.42" />
     <PackageReference Include="Syncfusion.Blazor.Calendars" Version="23.1.42" />
+    <PackageReference Include="Syncfusion.Blazor.Core" Version="23.1.42" />
+    <PackageReference Include="Syncfusion.Blazor.Inputs" Version="23.1.42" />
+    <PackageReference Include="syncfusion.blazor.lists" Version="23.1.42" />
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.42" />
   </ItemGroup>
 
