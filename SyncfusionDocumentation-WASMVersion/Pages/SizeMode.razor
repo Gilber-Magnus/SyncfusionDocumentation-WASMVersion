@@ -1,9 +1,13 @@
 ﻿@page "/sizemode"
+@inherits SizeModeBase
 
 <h3>Size Mode for a control</h3>
 <hr />
 
-<div class="e-bigger">
+<SfButton @onclick="Touch">TouchMode</SfButton>
+<SfButton @onclick ="Mouse">MouseMode</SfButton>
+
+<div class="@CssClass">
     <SfCalendar TValue="DateTime?" Value="@DateValue"></SfCalendar>
 </div>
 
@@ -15,8 +19,7 @@
     <SfCheckBox Label="checked" @bind-Checked="isChecked"></SfCheckBox>
 </div>
 
-
-@code {
-    private bool isChecked = true;
-    public DateTime? DateValue { get; set; } = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 8);
+@code{
+    protected bool isChecked = true;
+    protected DateTime? DateValue { get; set; } = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 8);
 }
