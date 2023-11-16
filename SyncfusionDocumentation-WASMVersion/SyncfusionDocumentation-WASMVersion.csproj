@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
+    <Content Remove="Pages\Component.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="compilerconfig.json" />
+    <None Include="Pages\Component.razor" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +27,14 @@
     <PackageReference Include="syncfusion.blazor.lists" Version="23.1.42" />
     <PackageReference Include="Syncfusion.Blazor.Popups" Version="23.1.42" />
     <PackageReference Include="Syncfusion.Blazor.Themes" Version="23.1.42" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Component.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Component.razor" />
   </ItemGroup>
 
 </Project>
